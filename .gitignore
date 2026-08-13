@@ -1,0 +1,63 @@
+# ---- Data (never commit; see data/README.md for how to obtain) ----
+data/raw/*
+data/derived/*
+!data/raw/.gitkeep
+!data/derived/.gitkeep
+!data/**/README.md
+
+# ---- Generated output ----
+output/tables/*
+output/figures/*
+!output/tables/.gitkeep
+!output/figures/.gitkeep
+
+# ---- Stata ----
+*.dta
+*.log
+*.smcl
+*.stpr
+*.stsess
+*.gph
+sysprofile.do
+profile.do
+
+# ---- R ----
+.Rhistory
+.RData
+.Rproj.user/
+.Rapp.history
+*.Rproj
+renv/library/
+renv/staging/
+
+# ---- Python (if used) ----
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+
+# ---- LaTeX ----
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+*.toc
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+._*
+*~
+.vscode/
+.idea/
+
+# ---- Credentials ----
+.env
+*_credentials.*
+
+# Run logs
+output/*.log
+output/*.txt
