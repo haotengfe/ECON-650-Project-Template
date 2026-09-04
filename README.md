@@ -40,7 +40,7 @@ econ650-replication/
 ## How to reproduce
 
 1. Clone this repository.
-2. Place the raw data files in `data/raw/` (see `data/README.md` for how to obtain them).
+2. Place the raw data files in `data/raw/`.
 3. Run **one** of the following from the repository root:
 
 **Stata**
