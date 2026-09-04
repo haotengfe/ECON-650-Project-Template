@@ -15,16 +15,39 @@ is safe that neither is committed.
 
 ## Required raw files
 
-| File name | Source | Access | Version / vintage | Notes |
+Every file that must be present in `raw/` before the code will run. One row per
+file, named exactly as the code expects to find it.
+
+| File name | Source (dataset, provider) | Access | Version / vintage | Notes |
 |---|---|---|---|---|
-| `original_data.csv` | [Dataset name, provider] | [URL, or "restricted — see below"] | [download date or release] | [any manual step] |
-|  |  |  |  |  |
+| | | | | |
+| | | | | |
+| | | | | |
 
 ### How to obtain
 
-1. [Step-by-step: URL, portal, query used, or the replication package DOI.]
-2. Save the file(s) into `data/raw/` with exactly the names in the table above —
-   the code refers to them by name.
+Write this so that someone with your repository but none of your files can
+follow it and end up with the same inputs. If the data come from a portal where
+you select variables yourself, record enough that your exact selection can be
+rebuilt.
+
+| Item | Value |
+|---|---|
+| Portal or archive | |
+| URL | |
+| Account required? | |
+| Study / cohort / collection selected | |
+| Saved selection or query name | |
+| Output options requested | |
+| Date downloaded | |
+| Downloaded by | |
+
+Then the steps:
+
+1. [Where to go and what to select.]
+2. [What to request on the way out: file formats, codebook, anything else.]
+3. Unzip or save the files into `data/raw/` under exactly the names in the table
+   above. Do not rename them and do not edit them.
 
 ### Restricted or licensed data
 
@@ -47,9 +70,23 @@ are public, delete this section.]
 
 ## Sample restrictions
 
-List every restriction applied in `01_import_clean`, in order, with the
-resulting N — this is the single most common source of failed replications.
+Every restriction applied in `01_import_clean`, in the order it is applied, with
+the number of observations remaining after each one. This is the single most
+common source of failed replications: if your count diverges from the paper's at
+some step, that step is where the problem is.
 
-1. Start: [N] observations.
-2. Drop [rule]: [N] remaining.
-3. Drop [rule]: [N] remaining.
+| # | Rule | Reason (given or inferred) | N remaining | Source in paper |
+|---|---|---|---|---|
+| 0 | Start: full extract as downloaded | | | |
+| 1 | | | | |
+| 2 | | | | |
+| 3 | | | | |
+| 4 | | | | |
+| 5 | | | | |
+| 6 | | | | |
+
+**Final N reported in the paper:**
+
+**Final N obtained here:**
+
+**If these differ, explain where and why:**

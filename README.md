@@ -5,7 +5,7 @@ Replication package for [PAPER SHORT TITLE] (ECON 650).
 ## Overview
 
 One paragraph: what paper is being replicated, what the original finds, and what
-this repository reproduces (exact replication, extension, robustness, etc.).
+this repository reproduces.
 
 | Item | Detail |
 |---|---|
@@ -40,7 +40,7 @@ econ650-replication/
 ## How to reproduce
 
 1. Clone this repository.
-2. Place the raw data files in `data/raw/` (see `data/README.md` for how to obtain them).
+2. Place the raw data files in `data/raw/`.
 3. Run **one** of the following from the repository root:
 
 **Stata**
